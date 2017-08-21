@@ -1,0 +1,15 @@
+form{
+  width: 50%;
+  margin: 30px;
+}
+#showDetails{
+  display: none;
+}
+.place:hover {
+  color: green;
+  text-decoration: underline;
+}
+.place {
+  color: blue;
+  cursor: pointer;
+}

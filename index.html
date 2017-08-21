@@ -8,48 +8,52 @@
       <title>Places We've Been</title>
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Places We've Been</h1>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <form id="form1">
-            <div class="form-group">
-              <label for="placeName">Location:</label>
-              <input id ="location" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <label for="landmark">Landmarks:</label>
-              <input id ="landmark" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-              <label for="date">Date:</label>
-              <input id ="date" class="form-control" type="date">
-            </div>
-            <div class="form-group">
-              <label for="Notes">Notes:</label>
-              <textarea class="form-control" id ="notes" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn">Submit</button>
-          </form>
-          <div>
-            <ul id = "results">
+    <video playsinline autoplay muted loop poster="video/Snapshots/Beach-Camera.jpg" id="bgvid">
+      <source src="video/WEBM/Beach-Camera.webm" type="video/webm">
+      <source src="video/MP4/Beach-Camera.mp4" type="video/mp4">
+    </video>
+      <div class="container">
+        <div class="jumbotron">
+          <h1>Places We've Been</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <form id="form1">
+              <div class="form-group">
+                <label for="placeName">Location:</label>
+                <input id ="location" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="landmark">Landmarks:</label>
+                <input id ="landmark" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="date">Date:</label>
+                <input id ="date" class="form-control" type="date">
+              </div>
+              <div class="form-group">
+                <label for="Notes">Notes:</label>
+                <textarea class="form-control" id ="notes" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+            <div>
+              <ul id = "results">
 
-            </ul>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="showDetails">
+              <h2>Location: <span class="location"></span></h2>
+              <p>Landmark: <span class="landmark"></span></p>
+              <p>Time of Year: <span class="date"></span></p>
+              <p>Notes: <span class="notes"></span></p>
+
+            </div>
+
           </div>
         </div>
-        <div class="col-md-6">
-          <div id="showDetails">
-            <h2>Location: <span class="location"></span></h2>
-            <p>Landmark: <span class="landmark"></span></p>
-            <p>Time of Year: <span class="date"></span></p>
-            <p>Notes: <span class="notes"></span></p>
-
-          </div>
-
-        </div>
-      </div>
     </div>
 
   </body>
